@@ -1,0 +1,36 @@
+.middleBody {
+	background: radial-gradient(
+		circle,
+		rgba(9, 27, 120, 1) 0%,
+		rgba(25, 34, 105, 1) 0%,
+		rgba(0, 0, 0, 1) 63%
+	);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 70vw;
+	margin: auto;
+	height: 400px;
+}
+
+.slide {
+	width: 800px;
+}
+
+.middleBodyDiv {
+	width: 70%;
+}
+
+.middleBodyH3 {
+	margin-top: 40px;
+}
+
+.middleBodyP {
+	margin-top: 0;
+}
+
+.middleBodyH3,
+.middleBodyP {
+	color: white;
+	font-family: "Akshar", sans-serif;
+}

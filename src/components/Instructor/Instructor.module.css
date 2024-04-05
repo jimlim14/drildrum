@@ -1,0 +1,62 @@
+.instructor {
+	display: flex;
+	margin: 50px 10px;
+	border: 2px solid #0b76db;
+	border-radius: 20px;
+}
+
+.instructorImg {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	align-self: center;
+	margin-left: 40px;
+	margin-right: 40px;
+	box-shadow: 1px 1px 57px -14px rgba(255, 255, 255, 0.75);
+}
+
+.instructorHeader {
+	display: flex;
+	margin-top: 10px;
+}
+
+.instructorQuote {
+	align-self: center;
+	font-family: "Anek Gujarati", sans-serif;
+	font-weight: 300;
+	width: 75%;
+	color: white;
+}
+
+.instructorName {
+	font-family: "Akshar", sans-serif;
+	width: 25%;
+	color: white;
+}
+
+.instructorExperience {
+	font-family: "Anek Gujarati", sans-serif;
+	color: white;
+}
+
+.instructorDescription {
+	font-family: "Anek Gujarati", sans-serif;
+	color: gray;
+	font-size: 20px;
+}
+
+.categoryP {
+	font-family: "Anek Gujarati", sans-serif;
+	color: gray;
+	font-size: 20px;
+}
+
+.categoryButton1,
+.categoryButton2,
+.categoryButton3 {
+	width: 150px;
+	border-radius: 20px;
+	font-family: "Akshar", sans-serif;
+	font-weight: 600;
+	background-color: black;
+}

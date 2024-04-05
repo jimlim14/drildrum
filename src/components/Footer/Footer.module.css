@@ -1,0 +1,187 @@
+.footer {
+	display: flex;
+	width: 60vw;
+	/* height: 600px; */
+	padding-top: 60px;
+	padding-bottom: 60px;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px auto;
+}
+
+.footerH4Beginner {
+	color: rgb(55, 55, 255);
+	font-family: "Anek Gujarati", sans-serif;
+	font-weight: 800;
+	font-size: 22px;
+	align-self: center;
+}
+
+.footerH4Amateur {
+	color: rgb(216, 33, 233);
+	font-family: "Anek Gujarati", sans-serif;
+	font-weight: 800;
+	font-size: 22px;
+	align-self: center;
+}
+
+.footerH4Professional {
+	color: rgb(248, 126, 45);
+	font-family: "Anek Gujarati", sans-serif;
+	font-weight: 800;
+	font-size: 22px;
+	align-self: center;
+}
+
+.footerDiv1 {
+	margin-top: 20px;
+	box-shadow: 1px 1px 57px -14px rgba(255, 255, 255, 0.75);
+}
+
+.footerBeginnerImg {
+	width: 240px;
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+.footerAmateurImg {
+	width: 240px;
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+.footerProfessionalImg {
+	width: 240px;
+	height: 160px;
+	margin-bottom: 20px;
+}
+
+.footerDiv1,
+.footerDiv2,
+.footerDiv3 {
+	border: none;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(12, 12, 54);
+	box-shadow: 1px 1px 57px -14px rgba(255, 255, 255, 0.75);
+}
+
+#footer div {
+	color: white;
+}
+
+.beginnerDiv,
+.amateurDiv,
+.professionalDiv {
+	display: flex;
+}
+
+.beginnerSvg {
+	width: 35px;
+	fill: rgb(55, 55, 255);
+	margin-right: 15px;
+}
+
+.amateurSvg {
+	width: 35px;
+	fill: rgb(216, 33, 233);
+	margin-right: 15px;
+}
+
+.professionalSvg {
+	width: 35px;
+	fill: rgb(248, 126, 45);
+	margin-right: 15px;
+}
+
+.footerTextDiv {
+	width: 200px;
+	text-align: center;
+}
+
+.footerH3 {
+	font-family: "Anek Gujarati", sans-serif;
+	font-weight: 800;
+	margin-top: 10px;
+	font-size: 25px;
+}
+
+.footerP {
+	font-family: "Anek Gujarati", sans-serif;
+	color: lightgray;
+	font-size: 18px;
+}
+
+.footerBeginnerBtn {
+	border: 2px solid rgb(55, 55, 255);
+	background-color: rgb(12, 12, 54);
+	color: rgb(55, 55, 255);
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.footerAmateurBtn {
+	border: 2px solid rgb(216, 33, 233);
+	background-color: rgb(12, 12, 54);
+	color: rgb(216, 33, 233);
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.footerProfessionalBtn {
+	border: 2px solid rgb(248, 126, 45);
+	background-color: rgb(12, 12, 54);
+	color: rgb(248, 126, 45);
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.footerBeginnerBtn,
+.footerAmateurBtn,
+.footerProfessionalBtn {
+	width: 150px;
+	border-radius: 20px;
+	font-family: "Akshar", sans-serif;
+	font-weight: 600;
+}
+
+.footerBeginnerBtn:hover {
+	color: white;
+	background-color: rgb(55, 55, 255);
+}
+
+.footerAmateurBtn:hover {
+	color: white;
+	background-color: rgb(216, 33, 233);
+}
+
+.footerProfessionalBtn:hover {
+	color: white;
+	background-color: rgb(248, 126, 45);
+}
+
+.instructorsCategory {
+	display: flex;
+	width: 60vw;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.category {
+	display: flex;
+	justify-self: center;
+}
+
+.categoryInstructors {
+	/* position: fixed; */
+}
+
+.categoryInstructor {
+	display: flex;
+	justify-content: space-around;
+	width: 1000px;
+	margin: auto;
+	color: white;
+}

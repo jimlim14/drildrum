@@ -1,0 +1,35 @@
+.disable {
+	pointer-events: none;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.navbarRight {
+	display: flex;
+	align-items: center;
+}
+
+.navbarRight div {
+	margin-right: 50px;
+}
+
+.logo {
+	width: 100px;
+	margin-left: 20px;
+}
+
+.navbarRightLink {
+	color: white;
+	font-size: 30px;
+	font-family: "Akshar", sans-serif;
+	text-decoration: none;
+}
+
+.navbarRightLink:hover {
+	color: #0b76db;
+}
