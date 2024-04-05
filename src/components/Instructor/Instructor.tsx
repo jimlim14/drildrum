@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styles from "./Instructor.module.css";
 
@@ -20,7 +21,7 @@ const Instructor: React.FC<Props> = ({
 }) => {
 	return (
 		<div className={styles.instructor}>
-			<img className={styles.instructorImg} src={image} alt="" />
+			<Image className={styles.instructorImg} src={image} alt="" />
 			<div className={styles.instructorDetails}>
 				<div className={styles.instructorHeader}>
 					<h1 className={styles.instructorName}>{name} </h1>
