@@ -32,7 +32,7 @@ const Instructor: React.FC<Props> = ({
 						teaching experience: {experience}
 					</h2>
 					<p className={styles.categoryP}>
-						{categories.map((category) => {
+						{categories.map((category: any) => {
 							return category + "  ";
 						})}
 					</p>

@@ -29,21 +29,21 @@ export default function Book() {
 	date.setDate(date.getDate() + 1);
 
 	/* use for only onChange */
-	const [appointment, setAppointment] = useState({
+	const [appointment, setAppointment] = useState<any>({
 		name: "",
 		start: "",
 		instructor: "",
 		id: "",
 	});
 
-	const [temporary, setTemporary] = useState({});
-	const [lastEvent, setLastEvent] = useState(null);
-	const [removeEvent, setRemoveEvent] = useState(null); //use to score information about clickInfo from handleEventClick callback argument.
-	const [toggle, setToggle] = useState(false); //use to toggle css click-path/invisibility...
+	const [temporary, setTemporary] = useState<any>({});
+	const [lastEvent, setLastEvent] = useState<any>(null);
+	const [removeEvent, setRemoveEvent] = useState<any>(null); //use to score information about clickInfo from handleEventClick callback argument.
+	const [toggle, setToggle] = useState<boolean>(false); //use to toggle css click-path/invisibility...
 
 	/* use to fetch INSTRUCTORS and APPOINTMENTS from server */
-	const [instructors, setInstructors] = useState([]);
-	const [appointments, setAppointments] = useState([]); // use for fetching appointments from server
+	const [instructors, setInstructors] = useState<any>([]);
+	const [appointments, setAppointments] = useState<any>([]); // use for fetching appointments from server
 	useEffect(() => {
 		fetch(`${serverUrl}/instructors`)
 			.then((res) => res.json())
@@ -57,9 +57,9 @@ export default function Book() {
 			});
 	}, []);
 
-	function handleDateClick(arg) {
+	function handleDateClick(arg: any) {
 		const date = new Date(arg.dateStr);
-		setAppointment((prev) => ({
+		setAppointment((prev: any) => ({
 			...prev,
 			start: date,
 		}));
@@ -67,8 +67,8 @@ export default function Book() {
 	}
 
 	/* access info about the added event */
-	function eventAdd(info) {
-		setAppointment((prev) => {
+	function eventAdd(info: any) {
+		setAppointment((prev: any) => {
 			return {
 				...prev,
 				id: info.event.id,
@@ -77,7 +77,7 @@ export default function Book() {
 	}
 
 	/* do something after user click button to do onSubmit on the form */
-	function handleSubmit(e) {
+	function handleSubmit(e: any) {
 		e.preventDefault();
 		if (lastEvent) {
 			lastEvent.remove();
@@ -94,7 +94,7 @@ export default function Book() {
 			})
 				.then((res) => res.json())
 				.then((data) => {
-					setAppointments((prev) => {
+					setAppointments((prev: any) => {
 						return [...prev, data];
 					});
 				});
@@ -110,9 +110,9 @@ export default function Book() {
 		}
 	}
 
-	function handleChange(e) {
+	function handleChange(e: any) {
 		const { name, value } = e.target;
-		setAppointment((prev) => ({
+		setAppointment((prev: any) => ({
 			...prev,
 			[name]: value,
 		}));
@@ -157,7 +157,7 @@ export default function Book() {
 					/>
 					<select onChange={handleChange} name="instructor">
 						<option value="">-- select instructors --</option>
-						{instructors.map((instructor) => (
+						{instructors.map((instructor: any) => (
 							<option key={instructor._id} value={instructor.name}>
 								{instructor.name}
 							</option>
@@ -228,7 +228,7 @@ export default function Book() {
 					}
 					eventAdd={eventAdd} // before i press book, this cb will be triggered
 					eventBackgroundColor={"#0b76db"} // change event color
-					dateClick={selectable ? handleDateClick : ""} // i initially installed on root directory, i then installed inside 'cd src' and it worked now.
+					dateClick={selectable ? handleDateClick : () => {}} // i initially installed on root directory, i then installed inside 'cd src' and it worked now.
 					events={
 						appointment.instructor
 							? [
